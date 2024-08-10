@@ -67,6 +67,27 @@ li {
 }
 
 /*--------button--start--------*/
+.main-btn {
+    background-color: var(--orange-main);
+    color: var(--white);
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    width: 138px;
+    height: 32px;
+}
+
+.main-btn:hover {
+    background-color: var(--white);
+    color: var(--orange-main);
+    border: 1px solid var(--orange-main);
+}
+
+.main-btn:active {
+    font-family: 'Poppins-Medium';
+    border: 2px solid var(--orange-main);
+}
+
 /*--------button--end--------*/
 
 /*===================== mobile version 375px =====================*/
@@ -77,6 +98,53 @@ li {
 /* header end */
 
 /* main start */
+#main .main__container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    width: 375px;
+    margin: 0 auto;
+}
+
+#main .main__greeting {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    margin-bottom: 20px;
+}
+
+#main .main__greeting .main__hi {
+    font-family: 'Poppins-SemiBold';
+    font-size: 18px;
+}
+
+#main .main__greeting .main__name {
+    font-family: 'Poppins-SemiBold';
+    font-size: 22px;
+    color: var(--orange-main);
+}
+
+#main .main__greeting .main__position {
+    font-family: 'Poppins-Bold';
+    font-size: 54px;
+    line-height: 65px;
+}
+
+#main .main__greeting .main__greet {
+    font-size: 14px;
+}
+
+#main .main__me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+#main .main__me .main__me__photo {
+    width: 250px;
+}
+
 /* main end" */
 
 /* about me start */
@@ -110,6 +178,50 @@ li {
     /* header end */
 
     /* main start */
+    #main .main__container {
+        display: flex;
+        flex-direction: row;
+        gap: 100px;
+        padding: 50px;
+        width: 1024px;
+    }
+
+    #main .main__greeting {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        margin-bottom: 0;
+    }
+
+    #main .main__greeting .main__hi {
+        font-size: 24px;
+    }
+
+    #main .main__greeting .main__name {
+        font-size: 30px;
+    }
+
+    #main .main__greeting .main__position {
+        font-size: 90px;
+        line-height: 80px;
+    }
+
+    #main .main__greeting .main__greet {
+        margin-top: 20px;
+        font-size: 21px;
+    }
+
+    #main .main__me {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 5px;
+    }
+
+    #main .main__me .main__me__photo {
+        width: 300px;
+    }
+
     /* main end" */
 
     /* about me start */
