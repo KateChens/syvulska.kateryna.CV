@@ -148,6 +148,110 @@ li {
 /* main end" */
 
 /* about me start */
+#about-me .about-me__container {
+    width: 375px;
+    margin: 0 auto;
+}
+
+#about-me .about-me__photo-container {
+    display: none;
+}
+
+#about-me .about-me__skills {
+    padding: 20px;
+}
+
+#about-me .about-me__skills .about-me__header {
+    font-family: 'Poppins-SemiBold';
+    font-size: 48px;
+}
+
+#about-me .about-me__skills .about-me__text {
+    font-size: 14px;
+}
+
+#about-me .about-me__skills .about-me__skills-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+#about-me .about-me__skills .about-me__skill_label {
+    font-family: 'Poppins-SemiBold';
+    font-size: 18px;
+}
+
+
+#about-me .about-me__skills .about-me__skill {
+    -webkit-appearance: none;
+}
+
+#about-me .about-me__skills .about-me__skill::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 10px;
+    background: var(--gray-roll);
+    border: none;
+    border-radius: 6px;
+}
+
+#about-me .about-me__skills .about-me__skill::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: 3px solid var(--orange-main);
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    background: var(--gray-roll);
+    margin-top: -10px;
+}
+
+#about-me .about-me__skills .about-me__skill {
+    border: 1px solid white;
+    width: 100%;
+}
+
+#about-me .about-me__skills .about-me__skill::-moz-range-track {
+    width: 100%;
+    height: 10px;
+    background: var(--gray-roll);
+    border: none;
+    border-radius: 6px;
+}
+
+#about-me .about-me__skills .about-me__skill::-moz-range-thumb {
+    border: none;
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    background: var(--orange-main);
+}
+
+#about-me .about-me__skills .about-me__skill::-ms-track {
+    width: 100%;
+    height: 10px;
+    background: transparent;
+    border-color: transparent;
+    border-width: 6px 0;
+    color: transparent;
+}
+
+#about-me .about-me__skills .about-me__skill::-ms-fill-lower {
+    background: var(--orange-main);
+    border-radius: 10px;
+}
+
+#about-me .about-me__skills .about-me__skill::-ms-fill-upper {
+    background: var(--gray-roll);
+    border-radius: 10px;
+}
+
+#about-me .about-me__skills .about-me__skill::-ms-thumb {
+    border: none;
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    background: var(--orange-main);
+}
+
 /* about me end */
 
 /* services start */
@@ -225,6 +329,42 @@ li {
     /* main end" */
 
     /* about me start */
+    #about-me .about-me__container {
+        padding: 50px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 100px;
+        width: 1024px;
+    }
+
+    #about-me .about-me__photo-container {
+        display: block;
+    }
+
+    #about-me .about-me__photo-container .about-me__photo {
+        width: 300px;
+    }
+
+    #about-me .about-me__skills .about-me__header {
+        font-size: 65px;
+    }
+
+    #about-me .about-me__skills .about-me__text {
+        font-size: 21px;
+    }
+
+    #about-me .about-me__skills .about-me__skills-container {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 15px;
+    }
+
+    #about-me .about-me__skills .about-me__skill_label {
+        font-size: 24px;
+    }
+
     /* about me end */
 
     /* services start */

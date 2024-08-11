@@ -61,27 +61,34 @@
         <!--main end-->
         
         <!--about me start-->
-        <section>
-            <div>
-                <img>
-            </div>
-
-            <div>
-                <h2>About Me</h2>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa nibh lectus netus in. Aliquet donec morbi convallis pretium. Turpis tempus pharetra
-                </p>
-                <div>
-                    <label for="1a" class="">1</label>
-                    <input type="range" name="" id="1a">
-                    <label for="2a" class="">2</label>
-                    <input type="range" name="" id="">
-                    <label for="3a" class="">3</label>
-                    <input type="range" name="" id="">
-                    <label for="4a" class="">4</label>
-                    <input type="range" name="" id="">
+        <section id="about-me">
+            <div class="about-me__container">
+                <div class="about-me__photo-container">
+                    <img src="src/img/me.webp" alt="My photo" class="about-me__photo">
+                </div>
+                
+                <div class="about-me__skills">
+                    <h2 class="about-me__header">About Me</h2>
+                    <p class="about-me__text">
+                        Once I saw a front-end development and what it consists
+                        of, I realized that this is for me and I want to do it. 
+                        I like the combination of working on the visual part and 
+                        working with the code using JavaScript.
+                    </p>
+                    <div class="about-me__skills-container">
+                        <label for="skill-html" class="about-me__skill_label">HTML</label>
+                        <input type="range" name="skill-html" id="skill-html" class="about-me__skill" value="90">
+                        <label for="skill-css" class="about-me__skill_label">CSS/SASS/SCSS</label>
+                        <input type="range" name="skill-css" id="skill-css" class="about-me__skill" value="90">
+                        <label for="skill-js" class="about-me__skill_label">Java Script</label>
+                        <input type="range" name="skill-js" id="skill-js" class="about-me__skill" value="75">
+                        <label for="skill-php" class="about-me__skill_label">PHP</label>
+                        <input type="range" name="skill-php" id="skill-php" class="about-me__skill" value="55">
+                    </div>
                 </div>
             </div>
+
+
         </section>
         <!--about me end-->
 
