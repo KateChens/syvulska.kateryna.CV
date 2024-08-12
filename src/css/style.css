@@ -77,15 +77,17 @@ li {
     height: 32px;
 }
 
-.main-btn:hover {
-    background-color: var(--white);
-    color: var(--orange-main);
-    border: 1px solid var(--orange-main);
-}
-
 .main-btn:active {
     font-family: 'Poppins-Medium';
     border: 2px solid var(--orange-main);
+}
+
+@media (min-width: 1024px) {
+    .main-btn:hover {
+        background-color: var(--white);
+        color: var(--orange-main);
+        border: 1px solid var(--orange-main);
+    }
 }
 
 /*--------button--end--------*/
@@ -352,10 +354,55 @@ li {
 
 /* my projects end */
 
-/* reviews start */
-/* reviews end */
-
 /* contact start */
+#contact .contact__container {
+    width: 375px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#contact .contact__container .contact__header {
+    font-family: 'Poppins-SemiBold';
+    font-size: 48px;
+}
+
+#contact .contact__container .contact__description {
+    font-size: 14px;
+    margin-bottom: 24px;
+}
+
+#contact .contact__container .contact__form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#contact .contact__container .contact__form .contact__form__button {
+    width: 100%;
+    height: 45px;
+    font-size: 16px;
+    border-radius: 14px;
+}
+
+#contact .contact__container .contact__form .contact__form__input {
+    height: 45px;
+    background-color: var(--gray-sm-bg);
+    border: 1px solid #AFAFAF;
+    border-radius: 14px;
+    outline: none;
+    padding-left: 14px;
+}
+
+#contact .contact__container .contact__form .contact__form__input:focus {
+    border: 1px solid var(--orange-main);
+}
+
+#contact .contact__container .contact__form .contact__form__input::placeholder {
+    color: #AFAFAF;
+    opacity: 1;
+    font-size: 16px;
+}
+
 /* contact end */
 
 /* footer start */
@@ -440,6 +487,52 @@ li {
     }
 
     /* my projects end */
+
+    /* contact start */
+    #contact .contact__container {
+        width: 768px;
+        text-align: center;
+    }
+
+    #contact .contact__container .contact__header {
+        font-size: 65px;
+    }
+
+    #contact .contact__container .contact__description {
+        font-size: 21px;
+        margin-bottom: 32px;
+    }
+
+    #contact .contact__container .contact__form {
+        display: flex;
+        flex-direction: row;
+        gap: 25px;
+    }
+
+    #contact .contact__container .contact__form .contact__form__button {
+        width: 222px;
+        height: 55px;
+        font-size: 18px;
+    }
+
+    #contact .contact__container .contact__form .contact__form__input {
+        height: 55px;
+        width: 627px;
+        background-color: var(--gray-sm-bg);
+        border: 1px solid #AFAFAF;
+        border-radius: 14px;
+        outline: none;
+        padding-left: 24px;
+        font-size: 16px;
+    }
+
+    #contact .contact__container .contact__form .contact__form__input::placeholder {
+        color: #AFAFAF;
+        opacity: 1;
+        font-size: 16px;
+    }
+
+    /* contact end */
 }
 
 /*=============================================================*/
@@ -568,10 +661,14 @@ li {
 
     /* my projects end */
 
-    /* reviews start */
-    /* reviews end */
-
     /* contact start */
+    #contact .contact__container {
+        width: 1024px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     /* contact end */
 
     /* footer start */
