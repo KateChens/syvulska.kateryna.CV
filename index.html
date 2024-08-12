@@ -20,21 +20,25 @@
         <!--loader end-->
         
         <!--header start-->
-        <!--
-        <header>
-            <img src="src/img/burger-menu.png">
-            <ul>
-                <li>Home</li>
-                <li>About Me</li>
-                <li>Services</li>
-                <li>Projects</li>
-                <li>Contact</li>
-                <li>
-                    <button>Downlaod CV</button>
+        
+        <header id="header">
+            <img src="src/img/burger-menu.png" class="header__burger">
+
+            <ul class="header__menu-list">
+                <li class="header__menu-list__item"><a href="#main">Home</a></li>
+                <li class="header__menu-list__item"><a href="#about-me">About Me</a></li>
+                <li class="header__menu-list__item"><a href="#services">Services</a></li>
+                <li class="header__menu-list__item"><a href="#my-projects">Projects</a></li>
+                <li class="header__menu-list__item"><a href="#contact">Contact</a></li>
+                <li class="header__menu-list__item">
+                    <button class="header__menu-list__download-btn main-btn">Downlaod CV</button>
                 </li>
+                <div class="header__close-burger">x</div>
             </ul>
+
+            
         </header>
-        -->
+       
         <!--header end-->
         
         <!--main start-->
@@ -52,7 +56,7 @@
 
                 <div class="main__me">
                     <img src="src/img/me.webp" alt="My photo" class="main__me__photo">
-                    <a class="main__me__link" href="https://www.linkedin.com/in/katya-syvulska-a22658202/">
+                    <a class="main__me__link" href="https://www.linkedin.com/in/katya-syvulska-a22658202/" target="_blank">
                         <img src="src/img/linkedin.png" alt="LinkedIn">
                     </a>
                 </div>
@@ -168,20 +172,20 @@
         <!--contact end-->
         
         <!--footer start-->
-        <footer>
-            <ul>
-                <li>Home</li>
-                <li>About Me</li>
-                <li>Services</li>
-                <li>Projects</li>
-                <li>Contact</li>
+        <footer id="footer">
+            <ul class="footer__menu-list">
+                <li class="footer__menu-list__item"><a href="#main">Home</a></li>
+                <li class="footer__menu-list__item"><a href="#about-me">About Me</a></li>
+                <li class="footer__menu-list__item"><a href="#services">Services</a></li>
+                <li class="footer__menu-list__item"><a href="#my-projects">Projects</a></li>
+                <li class="footer__menu-list__item"><a href="#contact">Contact</a></li>
             </ul>
-            <li>
-                <button>Downlaod CV</button>
-            </li>
+
+            <button class="footer_download-btn main-btn">Downlaod CV</button>
         </footer>
                 
         <!--footer end-->
+
         <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
         </script>
         <script type="text/javascript">
