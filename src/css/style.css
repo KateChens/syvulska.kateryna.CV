@@ -255,6 +255,50 @@ li {
 /* about me end */
 
 /* services start */
+#services .services__container {
+    width: 375px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#services .services__container .services__header {
+    font-family: 'Poppins-SemiBold';
+    font-size: 48px;
+}
+
+#services .services__container .services__description {
+    font-size: 14px;
+    margin-bottom: 24px;
+}
+
+#services .services__container .services__cards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#services .services__container .services__card {
+    width: 330px;
+    height: 346px;
+    background-color: var(--gray-sm-bg);
+    padding: 54px 18px 10px 22px;
+    border-radius: 14px;
+}
+
+#services .services__container .services__card__img {
+    width: 64px;
+}
+
+#services .services__container .services__card__header {
+    font-family: "Poppins-SemiBold";
+    font-size: 21px;
+    margin: 15px 0 10px;
+}
+
+#services .services__container .services__card__text {
+    font-size: 13px;
+}
+
 /* services end */
 
 /* my projects start */
@@ -268,6 +312,45 @@ li {
 
 /* footer start */
 /* footer end */
+
+/*=============================================================*/
+/*------------------------ @ media ----------------------------*/
+
+@media (min-width: 768px) {
+
+    /* services start */
+    #services .services__container {
+        width: 768px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    #services .services__container .services__header {
+        font-size: 65px;
+    }
+
+    #services .services__container .services__description {
+        font-size: 21px;
+        margin-bottom: 32px;
+    }
+
+    #services .services__container .services__cards {
+        display: flex;
+        flex-direction: row;
+        gap: 31px;
+        justify-content: center;
+    }
+
+    #services .services__container .services__card__header {
+        font-size: 19.5px;
+    }
+
+    /* services end */
+}
+
+
 
 /*=============================================================*/
 /*------------------------ @ media ----------------------------*/
@@ -368,6 +451,10 @@ li {
     /* about me end */
 
     /* services start */
+    #services .services__container {
+        width: 1024px;
+    }
+
     /* services end */
 
     /* my projects start */
