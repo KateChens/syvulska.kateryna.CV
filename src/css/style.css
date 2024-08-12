@@ -302,6 +302,54 @@ li {
 /* services end */
 
 /* my projects start */
+#my-projects .my-projects__container {
+    width: 375px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#my-projects .my-projects__container .my-projects__header {
+    font-family: 'Poppins-SemiBold';
+    font-size: 48px;
+}
+
+#my-projects .my-projects__container .my-projects__description {
+    font-size: 14px;
+    margin-bottom: 24px;
+}
+
+#my-projects .my-projects__projects {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+}
+
+#my-projects .my-projects__projects .my-projects__project-container {
+    width: 330px;
+    height: 489px;
+}
+
+#my-projects .my-projects__projects .my-projects__project-container__img {
+    width: 330px;
+    border-radius: 12px;
+}
+
+#my-projects .my-projects__projects .my-projects__project-container__img:active {
+    filter: drop-shadow(0 0 0.5rem var(--gray-stroke));
+}
+
+#my-projects .my-projects__projects .my-projects__project-container__header {
+    font-family: "Poppins-Bold";
+    font-size: 18px;
+    color: var(--black);
+    margin-top: 10px;
+}
+
+#my-projects .my-projects__projects .my-projects__project-container__header:active {
+    color: var(--dark-gray-text);
+}
+
 /* my projects end */
 
 /* reviews start */
@@ -348,9 +396,51 @@ li {
     }
 
     /* services end */
+
+    /* my projects start */
+    #my-projects .my-projects__container {
+        width: 768px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    #my-projects .my-projects__container .my-projects__header {
+        font-size: 65px;
+    }
+
+    #my-projects .my-projects__container .my-projects__description {
+        font-size: 21px;
+        margin-bottom: 32px;
+    }
+
+    #my-projects .my-projects__projects {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        justify-content: center;
+    }
+
+    #my-projects .my-projects__projects .my-projects__project-container {
+        width: 220px;
+        height: 489px;
+    }
+
+    #my-projects .my-projects__projects .my-projects__project-container__img {
+        width: 220px;
+    }
+
+    #my-projects .my-projects__projects .my-projects__project-container__header {
+        font-size: 16px;
+    }
+
+    #my-projects .my-projects__projects .my-projects__project-container__header:hover {
+        color: var(--orange-main);
+    }
+
+    /* my projects end */
 }
-
-
 
 /*=============================================================*/
 /*------------------------ @ media ----------------------------*/
@@ -458,6 +548,24 @@ li {
     /* services end */
 
     /* my projects start */
+    #my-projects .my-projects__container {
+        width: 1024px;
+    }
+
+    #my-projects .my-projects__projects .my-projects__project-container {
+        width: 300px;
+        height: 440px;
+    }
+
+    #my-projects .my-projects__projects .my-projects__project-container__img {
+        width: 300px;
+        height: 386px;
+    }
+
+    #my-projects .my-projects__projects .my-projects__project-container__header {
+        font-size: 20px;
+    }
+
     /* my projects end */
 
     /* reviews start */
