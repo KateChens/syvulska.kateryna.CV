@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Kateryna Syvulska" />
     <meta name="title" content="Frontend Developer - Kateryna Syvulska" />
@@ -16,13 +17,10 @@
 </head>
 
 <body>
-        <!--loader start-->
-        <!--loader end-->
-        
         <!--header start-->
-        
+        <div class="modal-backdrop"></div>
         <header id="header">
-            <img src="src/img/burger-menu.png" class="header__burger">
+            <img src="src/img/icons/burger-menu-dark.png" class="header__burger">
 
             <ul class="header__menu-list">
                 <li class="header__menu-list__item"><a href="#main">Home</a></li>
@@ -31,14 +29,14 @@
                 <li class="header__menu-list__item"><a href="#my-projects">Projects</a></li>
                 <li class="header__menu-list__item"><a href="#contact">Contact</a></li>
                 <li class="header__menu-list__item">
-                    <button class="header__menu-list__download-btn main-btn">Downlaod CV</button>
+                    <button class="header__menu-list__download-btn main-btn">
+                        Downlaod CV
+                    </button>
                 </li>
-                <div class="header__close-burger">x</div>
+                <img src="src/img/icons/close-icon-dark.png" class="header__close-burger">
             </ul>
-
-            
         </header>
-       
+           
         <!--header end-->
         
         <!--main start-->
@@ -57,13 +55,13 @@
                 <div class="main__me">
                     <img src="src/img/me.webp" alt="My photo" class="main__me__photo">
                     <a class="main__me__link" href="https://www.linkedin.com/in/katya-syvulska-a22658202/" target="_blank">
-                        <img src="src/img/linkedin.png" alt="LinkedIn">
+                        <img src="src/img/linkedin.png" alt="LinkedIn" class="main__me__linkedin">
                     </a>
                 </div>
             </div>
         </section>
         <!--main end-->
-        
+
         <!--about me start-->
         <section id="about-me">
             <div class="about-me__container">
@@ -103,7 +101,7 @@
                 
                 <div class="services__cards">
                     <div class="services__card">
-                        <img src="src/img/development.png" alt="Development" class="services__card__img">
+                        <img src="src/img/icons/development.png" alt="Development" class="services__card__img">
                         <h4 class="services__card__header">The development of personal pages & brand sites</h4>
                         <p class="services__card__text">
                             It has become increasingly essential in the digital age, where an online presence can 
@@ -111,7 +109,7 @@
                         </p>
                     </div>
                     <div class="services__card">
-                        <img src="src/img/support.png" alt="Support" class="services__card__img">
+                        <img src="src/img/icons/support.png" alt="Support" class="services__card__img">
                         <h4 class="services__card__header">Support of the existing site</h4>
                         <p class="services__card__text">
                             Support in the context of websites, adding and fixing functionality, 
@@ -185,6 +183,10 @@
         </footer>
                 
         <!--footer end-->
+
+        <a id="on-top" href="#top">
+            <img src="src/img/icons/arrow-up.png" alt="icon-arrow-up" class="icon-arrow-up">
+        </a>
 
         <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
         </script>
