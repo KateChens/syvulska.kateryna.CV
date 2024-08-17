@@ -32,7 +32,6 @@ function sendEmail() {
       settingsForModalsOpen();
       successModal.style.display = "block";
   })
-
 }
 
 let burgerMenu = document.querySelector(".header__menu-list");
@@ -55,6 +54,10 @@ let burgerMenuListItems = document.querySelectorAll(".header__menu-list__item");
 burgerMenuListItems.forEach(function (item) {
   item.addEventListener("click", function () {
     settingsForModalsClose();
+    if (window.innerWidth < 1024) {
+      burgerMenu.style.display = "none";
+      burgerOpen.style.display = "block";
+    }
   });
 })
 
