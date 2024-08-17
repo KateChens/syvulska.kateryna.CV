@@ -1,19 +1,3 @@
-let emailValue;
-
-document.querySelector(".contact__form__input").addEventListener("input", function () {
-    emailValue = document.querySelector(".contact__form__input").value;
-});
-
-/*function sendEmail() {
-  let params = {
-    email: emailValue,
-  };
-
-  emailjs.send("service_bs364yq", "template_j7hudjg", params);
-}*/
-
-//document.querySelector(".contact__form").addEventListener("submit", sendEmail());
-
 const modalsBlur = document.getElementsByClassName("modal-backdrop")[0];
 const myCVBody = document.getElementsByTagName("body")[0];
 
@@ -24,6 +8,31 @@ function settingsForModalsOpen() {
 function settingsForModalsClose() {
   myCVBody.style.overflow = "auto";
   modalsBlur.style.display = "none";
+}
+
+const successModal = document.getElementsByClassName("contact__success-window")[0];
+const successModalCloseBtn = document.getElementsByClassName("contact__success-window_icon-close")[0];
+
+successModalCloseBtn.addEventListener("click", () => {
+  successModal.style.display = "none";
+  settingsForModalsClose();
+});
+
+function sendEmail() {
+  let params = {
+    from_name: document.getElementById("form-name").value,
+    email: document.getElementById("form-email").value,
+  };
+
+  emailjs.send("service_bs364yq", "template_j7hudjg", params)
+    .then(function (res) {
+      console.log('Succesfully Sent ' + res.status);
+      document.getElementById("form-name").value = "";
+      document.getElementById("form-email").value = "";
+      settingsForModalsOpen();
+      successModal.style.display = "block";
+  })
+
 }
 
 let burgerMenu = document.querySelector(".header__menu-list");

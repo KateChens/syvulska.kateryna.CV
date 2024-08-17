@@ -106,7 +106,7 @@ h2 {
 /*===================== mobile version 375px =====================*/
 /* header start */
 #header {
-    z-index: 100;
+    z-index: 99;
 }
 
 #header .header__burger {
@@ -133,7 +133,7 @@ h2 {
     padding: 40px 10px;
     width: 100%;
     text-align: center;
-    z-index: 100;
+    z-index: 99;
 }
 
 #header .header__menu-list a {
@@ -448,6 +448,46 @@ input[type="range"] {
     font-size: 16px;
 }
 
+/*success*/
+.contact__success-window {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    width: 370px;
+    height: 200px;
+    border: 1px var(--orange-main) solid;
+    border-radius: 10px;
+    z-index: 100;
+    background-attachment: fixed;
+    padding: 0 16px 0 16px;
+    background-color: var(--white);
+    display: none;
+}
+
+.contact__success-window .contact__success-window_icon-close {
+    width: 30px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 16px 16px 0 0;
+    cursor: pointer;
+}
+
+.contact__success-window .contact__success-window_text1 {
+    font-size: 28px;
+    line-height: 37.1px;
+    text-align: center;
+    margin: 60px 0 11px;
+}
+
+.contact__success-window .contact__success-window_text2 {
+    font-size: 18px;
+    line-height: 23.85px;
+    text-align: center;
+}
+
 /* contact end */
 
 /* footer start */
@@ -499,7 +539,7 @@ input[type="range"] {
     background-color: rgba(150, 150, 150, 0.05);
     touch-action: none;
     -ms-touch-action: none;
-    z-index: 99;
+    z-index: 98;
     display: none;
 }
 
@@ -593,14 +633,14 @@ input[type="range"] {
     }
 
     #contact .contact__container .contact__form .contact__form__button {
-        width: 222px;
+        width: 200px;
         height: 55px;
         font-size: 18px;
     }
 
     #contact .contact__container .contact__form .contact__form__input {
         height: 55px;
-        width: 627px;
+        width: 300px;
         background-color: var(--gray-sm-bg);
         border: 1px solid #AFAFAF;
         border-radius: 14px;
@@ -825,6 +865,17 @@ input[type="range"] {
     }
 
     /* footer end */
+
+    #main:before,
+    #about-me:before,
+    #services:before,
+    #my-projects:before,
+    #contact:before {
+        content: "";
+        display: block;
+        height: 72px;
+        margin-top: -72px;
+    }
 
     /*=============================================================*/
     /*------------------------ @ media ----------------------------*/

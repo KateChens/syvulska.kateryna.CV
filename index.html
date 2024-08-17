@@ -48,7 +48,9 @@
                     <p class="main__greet">
                         I am a beginner FrontEnd developer who wants professional advancement.
                     </p>
-                    <button class="main__hire-me-btn main-btn">Hire Me</button>
+                    <a class="main__me__link" href="https://www.linkedin.com/in/katya-syvulska-a22658202/" target="_blank">
+                        <button class="main__hire-me-btn main-btn">Hire Me</button>
+                    </a>
                 </div>
 
                 <div class="main__me">
@@ -158,12 +160,19 @@
                 <h2 class="contact__header">Lets Code Together</h2>
                 <p class="contact__description">Write your mail and I will contact you</p>
 
-                <form action="" class="contact__form">
+                <div class="contact__form">
+                    <input type="text" name="form-name" id="form-name" class="contact__form__input" placeholder="Enter Your Name">
                     <input type="email" name="form-email" id="form-email" class="contact__form__input" placeholder="Enter Your Email">
-                    <button class="contact__form__button main-btn">Contact Me</button>
-                </form>
+                    <button class="contact__form__button main-btn" onclick="sendEmail()">Contact Me</button>
+                </div>
             </div>
         </section>
+
+        <div class="contact__success-window">
+            <img src="src/img/icons/close-icon-dark.png" class="contact__success-window_icon-close">
+            <p class="contact__success-window_text1">Thank you for your application!</p>
+            <p class="contact__success-window_text2">Expect feedback.</p>
+        </div>
         <!--contact end-->
         
         <!--footer start-->
@@ -188,7 +197,9 @@
         <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
         </script>
         <script type="text/javascript">
-            (function () {emailjs.init({publicKey: "eQyBQx-znxBuUqkG-",});})();
+            (function () {
+                emailjs.init("eQyBQx-znxBuUqkG-");
+            })();
         </script>
         <script src="src/js/script.js"></script>
 </body>
