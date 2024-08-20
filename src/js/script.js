@@ -74,3 +74,20 @@ function scrollFunction() {
   }
 }
 // top-button end
+
+// my projects
+let myProjectsImg = document.querySelectorAll(".my-projects__project-container__img");
+let myProjectsDescription = document.querySelectorAll(".my-projects__project-container__description");
+
+myProjectsImg.forEach(function (project) {
+  project.addEventListener("click", function () {
+    let projectDescription = project.nextSibling.nextSibling;
+    projectDescription.style.display = "flex";
+  })
+})
+
+myProjectsDescription.forEach(function (project) {
+  project.addEventListener("click", function () {
+    project.style.display = "none";
+  });
+});

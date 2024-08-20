@@ -50,6 +50,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Poppins-Regular';
     font-size: 21px;
@@ -98,6 +102,7 @@ h2 {
         background-color: var(--white);
         color: var(--orange-main);
         border: 1px solid var(--orange-main);
+        cursor: pointer;
     }
 }
 
@@ -376,17 +381,35 @@ input[type="range"] {
 }
 
 #my-projects .my-projects__projects .my-projects__project-container {
-    width: 330px;
-    height: 489px;
+    position: relative;
 }
 
 #my-projects .my-projects__projects .my-projects__project-container__img {
     width: 330px;
+    height: 425px;
     border-radius: 12px;
+    cursor: pointer;
 }
 
 #my-projects .my-projects__projects .my-projects__project-container__img:active {
     filter: drop-shadow(0 0 0.5rem var(--gray-stroke));
+}
+
+#my-projects .my-projects__projects .my-projects__project-container__description {
+    width: 330px;
+    height: 425px;
+    border-radius: 12px;
+    border: 2px solid var(--orange-main);
+    background-color: var(--white);
+    padding: 15px;
+    font-size: 20px;
+    position: absolute;
+    top: 0;
+    align-items: center;
+    font-family: "Poppins-Medium";
+    text-align: center;
+    display: none;
+    cursor: pointer;
 }
 
 #my-projects .my-projects__projects .my-projects__project-container__header {
@@ -396,6 +419,7 @@ input[type="range"] {
     margin-top: 10px;
     text-decoration: underline;
     text-align: center;
+    margin-bottom: 15px;
 }
 
 #my-projects .my-projects__projects .my-projects__project-container__header:active {
@@ -596,13 +620,15 @@ input[type="range"] {
         justify-content: center;
     }
 
-    #my-projects .my-projects__projects .my-projects__project-container {
-        width: 220px;
-        height: 340px;
-    }
-
     #my-projects .my-projects__projects .my-projects__project-container__img {
         width: 220px;
+        height: 280px;
+    }
+
+    #my-projects .my-projects__projects .my-projects__project-container__description {
+        width: 220px;
+        height: 280px;
+        font-size: 16px;
     }
 
     #my-projects .my-projects__projects .my-projects__project-container__header {
@@ -800,7 +826,7 @@ input[type="range"] {
     }
 
     #about-me .about-me__photo-container .about-me__photo {
-        width: 300px;
+        width: 350px;
     }
 
     #about-me .about-me__skills .about-me__text {
@@ -834,14 +860,20 @@ input[type="range"] {
         width: 1024px;
     }
 
-    #my-projects .my-projects__projects .my-projects__project-container {
-        width: 300px;
-        height: 440px;
+    #my-projects .my-projects__projects {
+        display: flex;
+        flex-direction: row;
     }
 
     #my-projects .my-projects__projects .my-projects__project-container__img {
         width: 300px;
         height: 386px;
+    }
+
+    #my-projects .my-projects__projects .my-projects__project-container__description {
+        width: 300px;
+        height: 386px;
+        font-size: 20px;
     }
 
     #my-projects .my-projects__projects .my-projects__project-container__header {
