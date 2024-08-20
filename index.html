@@ -29,7 +29,7 @@
                 <li class="header__menu-list__item"><a href="#contact">Contact</a></li>
                 <li class="header__menu-list__item">
                 <a href="https://drive.google.com/file/d/1_o3ZpVSbu2inRyiRVSyqOX8xyzwyjd4a/view?usp=sharing" target="_blank" class="header__menu-list__download-btn">
-                    <button class="header__menu-list__download main-btn">Downlaod CV</button>
+                    <button class="header__menu-list__download main-btn">Download CV</button>
                 </a>
                 </li>
                 <img src="src/img/icons/close-icon-dark.png" class="header__close-burger">
@@ -67,7 +67,7 @@
         <section id="about-me">
             <div class="about-me__container">
                 <div class="about-me__photo-container">
-                    <img src="src/img/me.webp" alt="My photo" class="about-me__photo">
+                    <img src="src/img/developer.webp" alt="My photo" class="about-me__photo">
                 </div>
                 
                 <div class="about-me__skills">
@@ -80,13 +80,13 @@
                     </p>
                     <div class="about-me__skills-container">
                         <label for="skill-html" class="about-me__skill_label">HTML</label>
-                        <input type="range" name="skill-html" id="skill-html" class="about-me__skill" value="90">
+                        <input type="range" name="skill-html" id="skill-html" class="about-me__skill" value="90" disabled>
                         <label for="skill-css" class="about-me__skill_label">CSS/SASS/SCSS</label>
-                        <input type="range" name="skill-css" id="skill-css" class="about-me__skill" value="90">
+                        <input type="range" name="skill-css" id="skill-css" class="about-me__skill" value="90" disabled>
                         <label for="skill-js" class="about-me__skill_label">Java Script</label>
-                        <input type="range" name="skill-js" id="skill-js" class="about-me__skill" value="75">
+                        <input type="range" name="skill-js" id="skill-js" class="about-me__skill" value="75" disabled>
                         <label for="skill-php" class="about-me__skill_label">PHP</label>
-                        <input type="range" name="skill-php" id="skill-php" class="about-me__skill" value="55">
+                        <input type="range" name="skill-php" id="skill-php" class="about-me__skill" value="55" disabled>
                     </div>
                 </div>
             </div>
@@ -112,9 +112,9 @@
                         <img src="src/img/icons/support.png" alt="Support" class="services__card__img">
                         <h4 class="services__card__header">Support of the existing site</h4>
                         <p class="services__card__text">
-                            Support in the context of websites, adding and fixing functionality, 
-                            is a crucial aspect of maintaining a successful online presence. This support ensures that 
-                            a site not only functions smoothly but also evolves to meet changing needs and expectations.
+                            Support in the context of websites, including adding and fixing functionality, is a crucial 
+                            aspect of maintaining a successful online presence. This support ensures that a site not 
+                            only functions smoothly, but also evolves to meet changing needs and expectations.
                         </p>
                     </div>
                 </div>
@@ -129,26 +129,46 @@
                 <p class="my-projects__description">Projects developed in a team</p>
                 
                 <div class="my-projects__projects">
-                    <a href="https://volunteers.intita.com/" target="_blank" class="my-projects__project-link">
-                        <div class="my-projects__project-container">
-                            <img src="src/img/my-projects/volunteer.webp" alt="Volunteer registration site" class="my-projects__project-container__img">
-                            <p class="my-projects__project-container__header">Volunteer registration site</p>
-                        </div>
-                    </a>
+                    
+                    <div class="my-projects__project-container">
+                        <img src="src/img/my-projects/volunteer.webp" alt="Volunteer registration site" class="my-projects__project-container__img">
+                        <p class="my-projects__project-container__description">
+                            I am responsible for the development of: <br>
+                            - form, <br>
+                            - block "For volunteers", <br>
+                            - pop-up window "Volunteer of social projects".
+                        </p>
+                        <a href="https://volunteers.intita.com/" target="_blank" class="my-projects__project-link">
+                            <p class="my-projects__project-container__header">Volunteer registration site</p> 
+                        </a>
+                    </div>
 
-                    <a href="https://drones.intita.com/" target="_blank" class="my-projects__project-link">
-                        <div class="my-projects__project-container">
-                            <img src="src/img/my-projects/drone-schools.webp" alt="Drone Schools" class="my-projects__project-container__img">
-                            <p class="my-projects__project-container__header">Drone Schools</p>
-                        </div>
-                    </a>
+                    <div class="my-projects__project-container">
+                        <img src="src/img/my-projects/drone-schools.webp" alt="Drone Schools" class="my-projects__project-container__img">
+                        <p class="my-projects__project-container__description">
+                            I am responsible for the development of: <br>
+                            - footer, <br>
+                            - scroll up arrow, <br>
+                            - fixing bugs.
+                        </p>
+                        <a href="https://drones.intita.com/" target="_blank" class="my-projects__project-link">
+                           <p class="my-projects__project-container__header">Drone Schools</p>
+                        </a>   
+                    </div>
 
-                    <a href="https://zno.intita.com/" target="_blank" class="my-projects__project-link">
-                        <div class="my-projects__project-container">
-                            <img src="src/img/my-projects/tutor.webp" alt="Tutor's personal page" class="my-projects__project-container__img">
+                    <div class="my-projects__project-container">
+                        <img src="src/img/my-projects/tutor.webp" alt="Tutor's personal page" class="my-projects__project-container__img">
+                        <p class="my-projects__project-container__description">
+                            I am responsible for the development of: <br>
+                            - header / burger modal window, <br>
+                            - modal window "Choose the desired course", <br>
+                            - fixing bugs.
+                        </p>
+                        <a href="https://zno.intita.com/" target="_blank" class="my-projects__project-link">
                             <p class="my-projects__project-container__header">Tutor's personal page</p>
-                        </div>
-                    </a>
+                        </a>   
+                    </div>
+                    
                 </div>
             </div>
         </section>
@@ -158,7 +178,7 @@
         <section id="contact">
             <div class="contact__container">
                 <h2 class="contact__header">Lets Code Together</h2>
-                <p class="contact__description">Write your mail and I will contact you</p>
+                <p class="contact__description">Write your email and I will contact you</p>
 
                 <div class="contact__form">
                     <input type="text" name="form-name" id="form-name" class="contact__form__input" placeholder="Enter Your Name">
@@ -185,7 +205,7 @@
                 <li class="footer__menu-list__item"><a href="#contact">Contact</a></li>
             </ul>
             <a href="https://drive.google.com/file/d/1_o3ZpVSbu2inRyiRVSyqOX8xyzwyjd4a/view?usp=sharing" target="_blank" class="header__menu-list__download-btn">
-                <button class="footer_download-btn main-btn">Downlaod CV</button>
+                <button class="footer_download-btn main-btn">Download CV</button>
             </a>     
         </footer>
         <!--footer end-->
