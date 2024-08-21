@@ -27,12 +27,91 @@ function sendEmail() {
   emailjs.send("service_bs364yq", "template_j7hudjg", params)
     .then(function (res) {
       console.log('Succesfully Sent ' + res.status);
-      document.getElementById("form-name").value = "";
-      document.getElementById("form-email").value = "";
+      updateInputs(document.getElementById("form-name"));
+      updateInputs(document.getElementById("form-email"));
+
+      document.getElementsByClassName("contact__form__button")[0].disabled = true;
       settingsForModalsOpen();
       successModal.style.display = "block";
   })
 }
+
+function updateInputs(input) {
+  input.value = "";
+  input.classList.add("success");
+  input.classList.remove("successful");
+}
+
+//validation start
+
+document.addEventListener("DOMContentLoaded", function () {
+  const formInputs = document.querySelectorAll(".contact__form__input");
+
+  formInputs.forEach(function (input) {
+    if (input.type == "text" || input.type == "email") {
+      input.addEventListener("blur", () => {
+        if (input.value === "") {
+          formAddError(input);
+        } else {
+          formValidateField(input);
+        }
+      });
+    }
+  });
+});
+
+document.getElementById("contact").addEventListener("click", function () {
+  let hasError = document.querySelectorAll(".error").length + document.querySelectorAll(".success").length > 0;
+  if (!hasError) {
+    document.getElementsByClassName("contact__form__button")[0].disabled = false;
+  } else {
+    document.getElementsByClassName("contact__form__button")[0].disabled = true;
+  }
+})
+
+function formValidateField(input) {
+  if (input.classList.contains("name")) {
+    let value = input.value.trim();
+    if (value.length < 2) {
+      formAddError(input);
+    } else {
+      formRemoveError(input);
+    }
+  }
+  if (input.classList.contains("email")) {
+    if (testEmail(input)) {
+      formAddError(input);
+    } else {
+      formRemoveError(input);
+    }
+  }
+}
+
+function formAddError(input) {
+  input.classList.add("error");
+  input.classList.remove("success");
+  input.classList.remove("successful");
+  let label = document.querySelector(`label[for='${input.name}']`);
+  if (label) {
+    label.classList.add("active-error");
+  }
+}
+function formRemoveError(input) {
+  input.classList.remove("error");
+  input.classList.remove("success");
+  input.classList.add("successful");
+  let label = document.querySelector(`label[for='${input.name}']`);
+  if (label) {
+    label.classList.remove("active-error");
+  }
+}
+function testEmail(input) {
+  return !/^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,8})+$/.test(input.value);
+}
+
+//validation end
+
+//burger
 
 let burgerMenu = document.querySelector(".header__menu-list");
 let burgerOpen = document.querySelector(".header__burger");

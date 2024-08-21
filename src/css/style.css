@@ -40,6 +40,8 @@
     --gray-sm-bg: #F8F8F8;
     --gray-roll: #EDECEC;
     --gray-stroke: #545454;
+    --middle-gray: #AFAFAF;
+    --error: #C50000;
 }
 
 *,
@@ -94,7 +96,13 @@ h2 {
 
 .main-btn:active {
     font-family: 'Poppins-Medium';
-    border: 2px solid var(--orange-main);
+    border: 1px solid var(--orange-main);
+}
+
+.main-btn:disabled {
+    background-color: var(--gray-roll);
+    color: var(--middle-gray);
+    border: 1px solid var(--middle-gray);
 }
 
 @media (min-width: 1024px) {
@@ -453,10 +461,14 @@ input[type="range"] {
     border-radius: 14px;
 }
 
+#contact .contact__container .contact__input-container {
+    display: flex;
+    flex-direction: column;
+}
+
 #contact .contact__container .contact__form .contact__form__input {
     height: 45px;
     background-color: var(--gray-sm-bg);
-    border: 1px solid #AFAFAF;
     border-radius: 14px;
     outline: none;
     padding-left: 14px;
@@ -467,9 +479,34 @@ input[type="range"] {
 }
 
 #contact .contact__container .contact__form .contact__form__input::placeholder {
-    color: #AFAFAF;
+    color: var(--middle-gray);
     opacity: 1;
     font-size: 16px;
+}
+
+.error-help {
+    display: none;
+    font-size: 11px;
+    color: var(--error);
+}
+
+.active-error {
+    display: block;
+}
+
+.error {
+    border: 1px solid var(--error);
+    color: var(--error);
+}
+
+.success {
+    border: 1px solid var(--middle-gray);
+    color: var(--orange-main);
+}
+
+.successful {
+    border: 1px solid var(--orange-main);
+    color: var(--orange-main);
 }
 
 /*success*/
@@ -668,7 +705,6 @@ input[type="range"] {
         height: 55px;
         width: 300px;
         background-color: var(--gray-sm-bg);
-        border: 1px solid #AFAFAF;
         border-radius: 14px;
         outline: none;
         padding-left: 24px;
@@ -676,7 +712,7 @@ input[type="range"] {
     }
 
     #contact .contact__container .contact__form .contact__form__input::placeholder {
-        color: #AFAFAF;
+        color: var(--middle-gray);
         opacity: 1;
         font-size: 16px;
     }
