@@ -170,3 +170,4 @@ myProjectsDescription.forEach(function (project) {
     project.style.display = "none";
   });
 });
+
