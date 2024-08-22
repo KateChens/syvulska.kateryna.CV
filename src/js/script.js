@@ -200,7 +200,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function addOrRemoveLangSuffix(url, langSuffix, isHomePage, remove = false) {
     if (isHomePage) {
-      return remove ? "/syvulska.kateryna.CV/" : "/index_eng";
+      return remove ? "/syvulska.kateryna.CV/" : "/syvulska.kateryna.CV/index_eng";
     } else {
       const hasEngSuffix = url.endsWith(langSuffix);
       if (remove && hasEngSuffix) {
