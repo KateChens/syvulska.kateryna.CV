@@ -188,19 +188,18 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const isHomePage = currentPage === "/syvulska.kateryna.CV/";
 
-    if (lang === "eng") {
-      targetPage = addOrRemoveLangSuffix(currentPage, "_eng", isHomePage);
+    if (lang === "ua") {
+      targetPage = addOrRemoveLangSuffix(currentPage, "_ua", isHomePage);
     } else {
-      targetPage = addOrRemoveLangSuffix(currentPage, "_eng", isHomePage, true);
+      targetPage = addOrRemoveLangSuffix(currentPage, "_ua", isHomePage, true);
     }
 
-    // Перенаправляємо користувача на нову сторінку
     window.location.href = targetPage;
   }
 
   function addOrRemoveLangSuffix(url, langSuffix, isHomePage, remove = false) {
     if (isHomePage) {
-      return remove ? "/syvulska.kateryna.CV/" : "/syvulska.kateryna.CV/index_eng";
+      return remove ? "/syvulska.kateryna.CV/" : "/syvulska.kateryna.CV/index_ua";
     } else {
       const hasEngSuffix = url.endsWith(langSuffix);
       if (remove && hasEngSuffix) {

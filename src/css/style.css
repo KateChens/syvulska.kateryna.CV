@@ -165,6 +165,13 @@ h2 {
     color: var(--white);
 }
 
+#header .header__menu-list .header__language {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5px;
+}
+
 /* header end */
 
 /* main start */
@@ -757,13 +764,18 @@ input[type="range"] {
         flex-direction: row;
         gap: 60px;
         justify-content: center;
+        align-items: center;
         font-size: 18px;
         padding: 20px;
         z-index: 96;
     }
 
     #header .header__menu-list a {
-        color: var(--black)
+        color: var(--black);
+    }
+
+    #header .header__menu-list li {
+        height: 23px;
     }
 
     #header .header__menu-list a:hover {
