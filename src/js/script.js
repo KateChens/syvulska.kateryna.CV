@@ -112,7 +112,6 @@ function testEmail(input) {
 //validation end
 
 //burger
-
 let burgerMenu = document.querySelector(".header__menu-list");
 let burgerOpen = document.querySelector(".header__burger");
 let burgerClose = document.querySelector(".header__close-burger");
@@ -171,3 +170,46 @@ myProjectsDescription.forEach(function (project) {
   });
 });
 
+//language
+document.addEventListener("DOMContentLoaded", function () {
+  const langLinks = document.querySelectorAll(".lang-link");
+
+  langLinks.forEach(function (link) {
+    link.addEventListener("click", function (event) {
+      event.preventDefault();
+      const lang = this.getAttribute("data-lang");
+      redirectPage(lang);
+    });
+  });
+
+  function redirectPage(lang) {
+    const currentPage = window.location.pathname;
+    let targetPage;
+
+    const isHomePage = currentPage === "/syvulska.kateryna.CV/";
+
+    if (lang === "eng") {
+      targetPage = addOrRemoveLangSuffix(currentPage, "_eng", isHomePage);
+    } else {
+      targetPage = addOrRemoveLangSuffix(currentPage, "_eng", isHomePage, true);
+    }
+
+    // Перенаправляємо користувача на нову сторінку
+    window.location.href = targetPage;
+  }
+
+  function addOrRemoveLangSuffix(url, langSuffix, isHomePage, remove = false) {
+    if (isHomePage) {
+      return remove ? "/syvulska.kateryna.CV/" : "/index_eng";
+    } else {
+      const hasEngSuffix = url.endsWith(langSuffix);
+      if (remove && hasEngSuffix) {
+        return url.slice(0, -langSuffix.length);
+      } else if (!remove && !hasEngSuffix) {
+        return url + langSuffix;
+      } else {
+        return url;
+      }
+    }
+  }
+});
