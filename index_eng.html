@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Kateryna Syvulska" />
+    <meta name="title" content="Frontend Developer - Kateryna Syvulska" />
+    <meta name="description" content="Let`s start work with Frontend Developer - Kateryna" />
+    <meta name="keywords" content="work, developer, frontend, cv, resume" />
+
+    <link rel="icon" type="image/webp" href="src/img/favicon.png" />
+    <title>CV: Kateryna Syvulska</title>
+
+    <link rel="stylesheet" href="src/css/style.css">
+</head>
+
+<body>
+    <!--header start-->
+    <div class="modal-backdrop"></div>
+    <header id="header">
+        <img src="src/img/icons/burger-menu-dark.png" class="header__burger">
+
+        <ul class="header__menu-list">
+            <li class="header__menu-list__item"><a href="#main">Головна</a></li>
+            <li class="header__menu-list__item"><a href="#about-me">Про мене</a></li>
+            <li class="header__menu-list__item"><a href="#services">Послуги</a></li>
+            <li class="header__menu-list__item"><a href="#my-projects">Проекти</a></li>
+            <li class="header__menu-list__item"><a href="#contact">Контакт</a></li>
+            <li class="header__menu-list__item">
+                <a href="https://drive.google.com/file/d/1_o3ZpVSbu2inRyiRVSyqOX8xyzwyjd4a/view?usp=sharing" target="_blank" class="header__menu-list__download-btn">
+                    <button class="header__menu-list__download main-btn">Завантажити CV</button>
+                </a>
+            </li>
+            <img src="src/img/icons/close-icon-dark.png" class="header__close-burger">
+
+            <div class="language">
+                <div class="language__ua close-menu active lang-link" href="#" data-lang="ua">UA</div>
+                <div class="language__line">|</div>
+                <a class="language__eng close-menu disable lang-link" href="#" data-lang="eng">ENG</a>
+            </div>
+        </ul>
+
+
+    </header>
+
+    <!--header end-->
+
+    <!--main start-->
+    <section id="main" class="main">
+        <div class="main__container">
+            <div class="main__greeting">
+                <p class="main__hi">Привіт, мене звати</p>
+                <p class="main__name">Катерина Сивульська</p>
+                <p class="main__position">FrontEnd Розробник</p>
+                <p class="main__greet">
+                    Я FrontEnd-розробник-початківець, який бажає професійного розвитку.
+                </p>
+                <a class="main__me__link" href="https://www.linkedin.com/in/katya-syvulska-a22658202/" target="_blank">
+                    <button class="main__hire-me-btn main-btn">Найми мене</button>
+                </a>
+            </div>
+
+            <div class="main__me">
+                <img src="src/img/me.webp" alt="My photo" class="main__me__photo">
+                <a class="main__me__link" href="https://www.linkedin.com/in/katya-syvulska-a22658202/" target="_blank">
+                    <img src="src/img/linkedin.png" alt="LinkedIn" class="main__me__linkedin">
+                </a>
+            </div>
+        </div>
+    </section>
+    <!--main end-->
+
+    <!--about me start-->
+    <section id="about-me">
+        <div class="about-me__container">
+            <div class="about-me__photo-container">
+                <img src="src/img/developer.webp" alt="My photo" class="about-me__photo">
+            </div>
+
+            <div class="about-me__skills">
+                <h2 class="about-me__header">Про мене</h2>
+                <p class="about-me__text">
+                    Одного разу я побачив фронтенд розробку і з чого вона складається
+                    я зрозумів, що це для мене і я хочу цим займатися.
+                    Мені подобається поєднання роботи над візуальною частиною та
+                    робота з кодом за допомогою JavaScript.
+                </p>
+                <div class="about-me__skills-container">
+                    <label for="skill-html" class="about-me__skill_label">HTML</label>
+                    <input type="range" name="skill-html" id="skill-html" class="about-me__skill" value="90" disabled>
+                    <label for="skill-css" class="about-me__skill_label">CSS/SASS/SCSS</label>
+                    <input type="range" name="skill-css" id="skill-css" class="about-me__skill" value="90" disabled>
+                    <label for="skill-js" class="about-me__skill_label">Java Script</label>
+                    <input type="range" name="skill-js" id="skill-js" class="about-me__skill" value="75" disabled>
+                    <label for="skill-php" class="about-me__skill_label">PHP</label>
+                    <input type="range" name="skill-php" id="skill-php" class="about-me__skill" value="55" disabled>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--about me end-->
+
+    <!--services start-->
+    <section id="services">
+        <div class="services__container">
+            <h2 class="services__header">Послуги</h2>
+            <p class="services__description">Послуги, які я надаю:</p>
+
+            <div class="services__cards">
+                <div class="services__card">
+                    <img src="src/img/icons/development.png" alt="Development" class="services__card__img">
+                    <h4 class="services__card__header">Розробка персональних сторінок і брендових сайтів</h4>
+                    <p class="services__card__text">
+                        Це стає все більш важливим у епоху цифрових технологій, де онлайн-присутність може
+                        істотно впливати на особистий і професійний успіх.
+                    </p>
+                </div>
+                <div class="services__card">
+                    <img src="src/img/icons/support.png" alt="Support" class="services__card__img">
+                    <h4 class="services__card__header">Підтримка існуючого сайту</h4>
+                    <p class="services__card__text">
+                        Підтримка в контексті веб-сайтів, включаючи додавання та виправлення функцій, є надзвичайно важливою
+                        аспект підтримки успішної присутності в Інтернеті. Ця підтримка гарантує, що сайт не буде
+                        лише безперебійно функціонує, але також розвивається відповідно до мінливих потреб і очікувань.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--services end-->
+
+    <!--my projects start-->
+    <section id="my-projects">
+        <div class="my-projects__container">
+            <h2 class="my-projects__header">Мої проекти</h2>
+            <p class="my-projects__description">Проекти, розроблені в команді</p>
+
+            <div class="my-projects__projects">
+                <div class="my-projects__project-container">
+                    <img src="src/img/my-projects/volunteer.webp" alt="Сайт реєстрації волонтерів" class="my-projects__project-container__img">
+                    <p class="my-projects__project-container__description">
+                        Я відповідаю за розвиток: <br>
+                        - форма, <br>
+                        - блок "Для волонтерів", <br>
+                        - спливаюче вікно «Волонтер соціальних проектів».
+                    </p>
+                    <a href="https://volunteers.intita.com/" target="_blank" class="my-projects__project-link">
+                        <p class="my-projects__project-container__header">Сайт реєстрації волонтерів</p>
+                    </a>
+                </div>
+
+                <div class="my-projects__project-container">
+                    <img src="src/img/my-projects/drone-schools.webp" alt="Школи дронів" class="my-projects__project-container__img">
+                    <p class="my-projects__project-container__description">
+                        Я відповідаю за розвиток: <br>
+                        - футер, <br>
+                        - стрілка вгору, <br>
+                        - виправлення помилок.
+                    </p>
+                    <a href="https://drones.intita.com/" target="_blank" class="my-projects__project-link">
+                        <p class="my-projects__project-container__header">Школи дронів</p>
+                    </a>
+                </div>
+
+                <div class="my-projects__project-container">
+                    <img src="src/img/my-projects/tutor.webp" alt="Особиста сторінка репетитора" class="my-projects__project-container__img">
+                    <p class="my-projects__project-container__description">
+                        Я відповідаю за розвиток: <br>
+                        - хедер / модальне вікно бургера, <br>
+                        - модальне вікно "Виберіть потрібний курс", <br>
+                        - виправлення помилок.
+                    </p>
+                    <a href="https://zno.intita.com/" target="_blank" class="my-projects__project-link">
+                        <p class="my-projects__project-container__header">Особиста сторінка репетитора</p>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!--my projects end-->
+
+    <!--contact start-->
+    <section id="contact">
+        <div class="contact__container">
+            <h2 class="contact__header">Давайте кодувати разом</h2>
+            <p class="contact__description">Напишіть свою електронну адресу і я зв'яжусь з вами</p>
+            <div class="contact__form">
+                <div class="contact__input-container">
+                    <input type="text" name="form-name" id="form-name" class="contact__form__input name success" placeholder="Введіть своє ім'яe">
+                    <label for="form-name" class="error-help">Це поле повинно містити принаймні 2 символи</label>
+                </div>
+                <div class="contact__input-container">
+                    <input type="email" name="form-email" id="form-email" class="contact__form__input email success" placeholder="Введіть свою пошту">
+                    <label for="form-email" class="error-help">Введіть адресу електронної пошти у форматі username@gmail.com</label>
+                </div>
+                <button class="contact__form__button main-btn" onclick="sendEmail()" disabled>Зв'яжіться зі мною</button>
+            </div>
+        </div>
+    </section>
+
+    <div class="contact__success-window">
+        <img src="src/img/icons/close-icon-dark.png" class="contact__success-window_icon-close">
+        <p class="contact__success-window_text1">Дякуємо за заявку!</p>
+        <p class="contact__success-window_text2">Очікуйте, я скоро зв'яжусь з вами</p>
+    </div>
+    <!--contact end-->
+
+    <!--footer start-->
+    <footer id="footer">
+        <ul class="footer__menu-list">
+            <li class="footer__menu-list__item"><a href="#main">Головна</a></li>
+            <li class="footer__menu-list__item"><a href="#about-me">Про мене</a></li>
+            <li class="footer__menu-list__item"><a href="#services">Послуги</a></li>
+            <li class="footer__menu-list__item"><a href="#my-projects">Проекти</a></li>
+            <li class="footer__menu-list__item"><a href="#contact">Контакт</a></li>
+        </ul>
+        <a href="https://drive.google.com/file/d/1_o3ZpVSbu2inRyiRVSyqOX8xyzwyjd4a/view?usp=sharing" target="_blank" class="header__menu-list__download-btn">
+            <button class="footer_download-btn main-btn">Завантажити CV</button>
+        </a>
+    </footer>
+    <!--footer end-->
+
+    <a id="on-top" href="#top">
+        <img src="src/img/icons/arrow-up.png" alt="icon-arrow-up" class="icon-arrow-up">
+    </a>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("eQyBQx-znxBuUqkG-");
+        })();
+    </script>
+    <script src="src/js/script.js"></script>
+</body>
+
+</html>
