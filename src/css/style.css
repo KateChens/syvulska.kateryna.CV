@@ -1,30 +1,30 @@
 @font-face {
-    font-family: 'Poppins-Regular';
-    src: local('Poppins-Regular'), url('../fonts/Poppins-Regular.ttf') format('truetype');
+    font-family: 'Mulish-Regular';
+    src: local('Mulish-Regular'), url('../fonts/Mulish-Regular.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
     line-height: normal;
 }
 
 @font-face {
-    font-family: 'Poppins-Medium';
-    src: local('Poppins-Medium'), url('../fonts/Poppins-Medium.ttf') format('truetype');
+    font-family: 'Mulish-Medium';
+    src: local('Mulish-Medium'), url('../fonts/Mulish-Medium.ttf') format('truetype');
     font-weight: 500;
     font-style: normal;
     line-height: normal;
 }
 
 @font-face {
-    font-family: 'Poppins-SemiBold';
-    src: local('Poppins-SemiBold'), url('../fonts/Poppins-SemiBold.ttf') format('truetype');
+    font-family: 'Mulish-SemiBold';
+    src: local('Mulish-SemiBold'), url('../fonts/Mulish-SemiBold.ttf') format('truetype');
     font-weight: 600;
     font-style: normal;
     line-height: normal;
 }
 
 @font-face {
-    font-family: 'Poppins-Bold';
-    src: local('Poppins-Bold'), url('../fonts/Poppins-Bold.ttf') format('truetype');
+    font-family: 'Mulish-Bold';
+    src: local('Mulish-Bold'), url('../fonts/Mulish-Bold.ttf') format('truetype');
     font-weight: 700;
     font-style: normal;
     line-height: normal;
@@ -57,8 +57,8 @@ html {
 }
 
 body {
-    font-family: 'Poppins-Regular';
-    font-size: 21px;
+    font-family: 'Mulish-Regular';
+    font-size: 18px;
     background-color: var(--white);
 }
 
@@ -73,7 +73,7 @@ li {
 }
 
 h2 {
-    font-family: 'Poppins-SemiBold';
+    font-family: 'Mulish-Bold';
     font-size: 44px;
 }
 
@@ -95,7 +95,7 @@ h2 {
 }
 
 .main-btn:active {
-    font-family: 'Poppins-Medium';
+    font-family: 'Mulish-Medium';
     border: 1px solid var(--orange-main);
 }
 
@@ -141,7 +141,7 @@ h2 {
     display: none;
     flex-direction: column;
     gap: 10px;
-    font-size: 18px;
+    font-size: 20px;
     background-color: var(--white);
     padding: 40px 10px;
     width: 100%;
@@ -165,6 +165,13 @@ h2 {
     color: var(--white);
 }
 
+#header .header__menu-list .header__language {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5px;
+}
+
 /* header end */
 
 /* main start */
@@ -179,29 +186,25 @@ h2 {
 #main .main__greeting {
     display: flex;
     flex-direction: column;
-    gap: 7px;
+    gap: 8px;
     margin-bottom: 20px;
 }
 
 #main .main__greeting .main__hi {
-    font-family: 'Poppins-SemiBold';
+    font-family: 'Mulish-Bold';
     font-size: 20px;
 }
 
 #main .main__greeting .main__name {
-    font-family: 'Poppins-SemiBold';
+    font-family: 'Mulish-Bold';
     font-size: 24px;
     color: var(--orange-main);
 }
 
 #main .main__greeting .main__position {
-    font-family: 'Poppins-Bold';
+    font-family: 'Mulish-Bold';
     font-size: 50px;
     line-height: 65px;
-}
-
-#main .main__greeting .main__greet {
-    font-size: 14px;
 }
 
 #main .main__me {
@@ -236,19 +239,16 @@ h2 {
     padding: 20px;
 }
 
-#about-me .about-me__skills .about-me__text {
-    font-size: 16px;
-}
-
 #about-me .about-me__skills .about-me__skills-container {
     display: flex;
     flex-direction: column;
+    gap: 5px;
     margin-top: 10px;
 }
 
 #about-me .about-me__skills .about-me__skill_label {
-    font-family: 'Poppins-SemiBold';
-    font-size: 18px;
+    font-family: 'Mulish-SemiBold';
+    font-size: 20px;
     margin-top: 10px;
 }
 
@@ -335,7 +335,6 @@ input[type="range"] {
 }
 
 #services .services__container .services__description {
-    font-size: 16px;
     margin-bottom: 24px;
 }
 
@@ -358,13 +357,13 @@ input[type="range"] {
 }
 
 #services .services__container .services__card__header {
-    font-family: "Poppins-SemiBold";
+    font-family: "Mulish-SemiBold";
     font-size: 21px;
     margin: 15px 0 10px;
 }
 
 #services .services__container .services__card__text {
-    font-size: 14px;
+    font-size: 16px;
 }
 
 /* services end */
@@ -377,7 +376,6 @@ input[type="range"] {
 }
 
 #my-projects .my-projects__container .my-projects__description {
-    font-size: 16px;
     margin-bottom: 24px;
 }
 
@@ -414,15 +412,14 @@ input[type="range"] {
     position: absolute;
     top: 0;
     align-items: center;
-    font-family: "Poppins-Medium";
+    font-family: "Mulish-Medium";
     text-align: center;
     display: none;
     cursor: pointer;
 }
 
 #my-projects .my-projects__projects .my-projects__project-container__header {
-    font-family: "Poppins-Bold";
-    font-size: 18px;
+    font-family: "Mulish-SemiBold";
     color: var(--black);
     margin-top: 10px;
     text-decoration: underline;
@@ -444,7 +441,6 @@ input[type="range"] {
 }
 
 #contact .contact__container .contact__description {
-    font-size: 16px;
     margin-bottom: 24px;
 }
 
@@ -562,7 +558,7 @@ input[type="range"] {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 16px;
+    font-size: 18px;
     gap: 5px;
     margin-bottom: 15px;
 }
@@ -631,7 +627,7 @@ input[type="range"] {
     }
 
     #services .services__container .services__card__header {
-        font-size: 19.5px;
+        font-size: 19px;
     }
 
     /* services end */
@@ -692,7 +688,7 @@ input[type="range"] {
     #contact .contact__container .contact__form {
         display: flex;
         flex-direction: row;
-        gap: 25px;
+        justify-content: space-around;
     }
 
     #contact .contact__container .contact__form .contact__form__button {
@@ -703,7 +699,7 @@ input[type="range"] {
 
     #contact .contact__container .contact__form .contact__form__input {
         height: 55px;
-        width: 300px;
+        width: 220px;
         background-color: var(--gray-sm-bg);
         border-radius: 14px;
         outline: none;
@@ -766,15 +762,20 @@ input[type="range"] {
         width: 100%;
         display: flex;
         flex-direction: row;
-        gap: 84px;
+        gap: 60px;
         justify-content: center;
+        align-items: center;
         font-size: 18px;
         padding: 20px;
         z-index: 96;
     }
 
     #header .header__menu-list a {
-        color: var(--black)
+        color: var(--black);
+    }
+
+    #header .header__menu-list li {
+        height: 23px;
     }
 
     #header .header__menu-list a:hover {
@@ -925,6 +926,10 @@ input[type="range"] {
         flex-direction: column;
         align-items: center;
         padding: 30px 50px;
+    }
+
+    #contact .contact__container .contact__form .contact__form__input {
+        width: 300px;
     }
 
     /* contact end */
