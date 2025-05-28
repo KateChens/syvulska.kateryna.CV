@@ -60,14 +60,17 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-document.getElementById("contact").addEventListener("click", function () {
-  let hasError = document.querySelectorAll(".error").length + document.querySelectorAll(".success").length > 0;
-  if (!hasError) {
-    document.getElementsByClassName("contact__form__button")[0].disabled = false;
-  } else {
-    document.getElementsByClassName("contact__form__button")[0].disabled = true;
-  }
-})
+function checkFormStatus() {
+  const allInputs = document.querySelectorAll(".contact__form__input");
+  const button = document.querySelector(".contact__form__button");
+
+  const allValid = Array.from(allInputs).every((input) =>
+    input.classList.contains("successful")
+  );
+
+  button.disabled = !allValid;
+}
+
 
 function formValidateField(input) {
   if (input.classList.contains("name")) {
@@ -95,6 +98,7 @@ function formAddError(input) {
   if (label) {
     label.classList.add("active-error");
   }
+  checkFormStatus();
 }
 function formRemoveError(input) {
   input.classList.remove("error");
@@ -104,6 +108,7 @@ function formRemoveError(input) {
   if (label) {
     label.classList.remove("active-error");
   }
+  checkFormStatus();
 }
 function testEmail(input) {
   return !/^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,8})+$/.test(input.value);
