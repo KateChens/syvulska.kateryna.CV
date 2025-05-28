@@ -24,7 +24,7 @@ function sendEmail() {
     email: document.getElementById("form-email").value,
   };
 
-  emailjs.send("service_7h96yr8", "template_j7hudjg", params)
+  emailjs.send("service_7h96yr8", "template_86on0gk", params)
     .then(function (res) {
       console.log('Succesfully Sent ' + res.status);
       updateInputs(document.getElementById("form-name"));
